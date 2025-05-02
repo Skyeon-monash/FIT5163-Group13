@@ -5,7 +5,11 @@ import threading
 import time
 from dataclasses import dataclass
 
+
+
 from PySide6.QtCore import Signal, QThread
+
+
 
 import struct
 import numpy as np
@@ -71,7 +75,7 @@ class ServerThread(QThread):
                     choice = conn.recv(BUFFER_SIZE).decode()
                     if not choice:
                         break  # 客户端关闭连接或断电
-
+#正确的
                     self.connection_prompt_signal.emit(f"收到客户端 {addr} 的选择: {choice}")
 
                     if choice == "1":
