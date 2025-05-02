@@ -51,7 +51,7 @@ def login():
         sock = socket.create_connection((HOST, PORT), timeout=5)
         ssock =context.wrap_socket(sock, server_hostname=HOST)
         global_ssock = ssock
-
+        print("登陆成功")
         # 重定向到主页（会触发GET请求）
         return redirect(url_for('home'))  # 关键修改点
 
