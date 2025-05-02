@@ -126,6 +126,7 @@ class ServerThread(QThread):
                 raw_len = self.recv_all(conn, 4)
                 if not raw_len:
                     break
+                
                 msg_len = struct.unpack('!I', raw_len)[0]
 
                 frame_data = self.recv_all(conn, msg_len)
@@ -153,7 +154,9 @@ class ServerThread(QThread):
         data = b''
         while len(data) < n:
             packet = sock.recv(n - len(data))
+
             if not packet:
                 return None
+
             data += packet
         return data
