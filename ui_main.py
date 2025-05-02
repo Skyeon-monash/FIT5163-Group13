@@ -189,8 +189,6 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_6.addWidget(self.titleLeftDescription)
-
-
         self.verticalLayout_5.addWidget(self.leftMenuTop)
 
         self.topMenu = QFrame(self.leftMenuBg)
@@ -265,9 +263,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.settingBtn)
 
-
         self.verticalLayout_5.addWidget(self.bottomMenu)
-
 
         self.horizontalLayout.addWidget(self.leftMenuBg)
 
@@ -342,7 +338,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.subtitleRightInfo)
 
-
         self.horizontalLayout_2.addWidget(self.leftBox)
 
         self.rightButtons = QFrame(self.contentTopBg)
@@ -391,9 +386,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.closeAppBtn)
 
-
         self.horizontalLayout_2.addWidget(self.rightButtons, 0, Qt.AlignmentFlag.AlignRight)
-
 
         self.verticalLayout_2.addWidget(self.contentTopBg, 0, Qt.AlignmentFlag.AlignTop)
 
@@ -494,12 +487,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_30.addWidget(self.label_17)
 
-
         self.verticalLayout_29.addWidget(self.frame_25, 0, Qt.AlignmentFlag.AlignTop)
 
-
         self.verticalLayout_28.addWidget(self.frame_24)
-
 
         self.horizontalLayout_14.addWidget(self.frame_20)
 
@@ -541,7 +531,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_32.addWidget(self.label_19)
 
-
         self.verticalLayout_31.addWidget(self.frame_26, 0, Qt.AlignmentFlag.AlignTop)
 
         self.frame_27 = QFrame(self.frame_21)
@@ -566,7 +555,6 @@ class Ui_MainWindow(object):
         self.label_20.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_34.addWidget(self.label_20)
-
 
         self.verticalLayout_33.addWidget(self.frame_28)
 
@@ -616,12 +604,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_35.addWidget(self.pushButton_8)
 
-
         self.verticalLayout_33.addWidget(self.frame_29)
 
-
         self.verticalLayout_31.addWidget(self.frame_27)
-
 
         self.horizontalLayout_14.addWidget(self.frame_21)
 
