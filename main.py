@@ -67,7 +67,7 @@ class MainWindow(QMainWindow):
 
         # 消息接收功能页面
         self.server_thread.message_recv_signal.connect(self.append_msg_recv)  # 消息接收功能
-        self.ui.fileOpenBtn.clicked.connect(self.open_file_path_sys)  # 打开文件路径按钮
+        self.ui.fileOpenBtn.clicked.connect(self.open_msg_path_sys)  # 打开文件路径按钮
         self.ui.clearBtn.clicked.connect(self.clear_msg_recv)  # 清空接收区
         self.ui.msgSaveBtn.clicked.connect(self.save_msg_recv)  # 保存接收到的消息
 
@@ -97,6 +97,15 @@ class MainWindow(QMainWindow):
 
     def clear_msg_recv(self):
         self.ui.messageRecv.clear()
+
+    def open_msg_path_sys(self):
+        folderPath = QFileDialog.getExistingDirectory(
+            self,
+            'Choose a Directory',
+            os.getcwd(),  # 程序当前工作目录  # 只显示 .txt 文件
+        )
+        if folderPath:
+            self.ui.msgSavePath.setText(folderPath)
 
     def save_msg_recv(self):
         # 获取 QTextEdit 内容并去除首尾空白

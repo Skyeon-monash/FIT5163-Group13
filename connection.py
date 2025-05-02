@@ -12,8 +12,8 @@ import numpy as np
 import cv2
 from PySide6.QtGui import QImage
 
+HOST = '127.0.0.1'
 # HOST = '0.0.0.0'
-HOST = '0.0.0.0'
 PORT = 12345
 BUFFER_SIZE = 4096
 
