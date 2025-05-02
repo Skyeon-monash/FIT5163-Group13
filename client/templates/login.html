@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>登录网页</title>
+
+<style>
+    /* 新增父容器 */
+.center-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  min-height: 80vh;       /* 撑满整个视口高度 */
+}
+.ip-input-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.ip-part {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.ip-part:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.separator {
+  margin: 0 5px;
+  color: #666;
+}
+</style>
+</head>
+<body>
+<!-- 包裹在父容器中 -->
+<div class="center-container">
+<div class="ip-input-container">
+    <form method="POST" enctype="multipart/form-data">
+      <input type="text" maxlength="3" class="ip-part" pattern="[0-9]*" inputmode="numeric" name="text1">
+      <span class="separator">.</span>
+      <input type="text" maxlength="3" class="ip-part" pattern="[0-9]*" inputmode="numeric" name="text2">
+      <span class="separator">.</span>
+      <input type="text" maxlength="3" class="ip-part" pattern="[0-9]*" inputmode="numeric" name="text3">
+      <span class="separator">.</span>
+      <input type="text" maxlength="3" class="ip-part" pattern="[0-9]*" inputmode="numeric" name="text4">
+      <button type="submit" id="1" name="submit_action" value="login_submit">提交</button>
+    </form>
+</div>
+</div>
+
+</body>
+</html>
