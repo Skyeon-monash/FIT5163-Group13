@@ -5,7 +5,11 @@ import threading
 import time
 from dataclasses import dataclass
 
+
+
 from PySide6.QtCore import Signal, QThread
+
+
 
 import struct
 import numpy as np
@@ -71,7 +75,7 @@ class ServerThread(QThread):
                     choice = conn.recv(BUFFER_SIZE).decode()
                     if not choice:
                         break  # 客户端关闭连接或断电
-
+#正确的
                     self.connection_prompt_signal.emit(f"收到客户端 {addr} 的选择: {choice}")
 
                     if choice == "1":
@@ -126,6 +130,7 @@ class ServerThread(QThread):
                 raw_len = self.recv_all(conn, 4)
                 if not raw_len:
                     break
+                
                 msg_len = struct.unpack('!I', raw_len)[0]
 
                 frame_data = self.recv_all(conn, msg_len)
@@ -153,7 +158,9 @@ class ServerThread(QThread):
         data = b''
         while len(data) < n:
             packet = sock.recv(n - len(data))
+
             if not packet:
                 return None
+
             data += packet
         return data

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>输入与文件选择示例</title>
+    <style>
+.container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 20px 0;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .text-transfer {
+            background: linear-gradient(135deg, #84fab0, #8fd3f4);
+            color: #2d3436;
+        }
+
+        .file-transfer {
+            background: linear-gradient(135deg, #6c5ce7, #a6b1e1);
+            color: #2d3436;
+        }
+
+        .video-transfer {
+            background: linear-gradient(135deg, #ffa502, #ff6b6b);
+            color: white;
+        }
+
+        .input-group {
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            opacity: 0.9;
+            transition: transform 0.3s ease;
+        }
+
+        .input-group:hover {
+            transform: translateY(-3px);
+        }
+
+        input[type="text"] {
+            padding: 12px 20px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            width: 320px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #6c5ce7;
+        }
+
+        button {
+            padding: 12px 28px;
+            background-color: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            background-color: #5649c0;
+        }
+
+        .file-select {
+            padding: 12px 20px;
+            border: 2px dashed #ddd;
+            border-radius: 25px;
+            background: #fafafa;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .file-select:hover {
+            border-color: #6c5ce7;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 添加form标签 -->
+    <form method="POST" enctype="multipart/form-data">
+        <label class="section-title text-transfer">▶ 文本传输</label>
+        <!-- 文本框和按钮 -->
+        <div class="input-group">
+            <!-- 添加name属性 -->
+            <input type="text" id="myInput" name="text_input" placeholder="请输入内容...">
+            <!-- 文本提交按钮 -->
+            <button type="submit" id="1" name="submit_action" value="text_submit">提交</button>
+        </div>
+            <label class="section-title file-transfer">▶ 文件传输</label>
+        <div class="input-group">
+            <!-- 添加 name="selected_file" -->
+            <select id="file-select" class="file-select" name="selected_file">
+                <option value="">-- 请选择文件 --</option>
+                {% for file in file_list %}
+                <option value="{{ file }}">{{ file }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" id="2" name="submit_action" value="file_submit">选择</button>
+        </div>
+        <label class="section-title video-transfer">▶ 视频传输</label>
+        <div class="input-group">
+            <label >视频传输</label>
+            <button type="submit" id="3" name="submit_action" value="video_submit">开始</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
