@@ -70,6 +70,7 @@ def home():
             choice = '1'
             Send_Message(global_ssock, choice.encode())
             Send_Message(global_ssock, text_content.encode())
+
         elif submit_action == 'file_submit':
             # 获取下拉框选择的文件名
             selected_file = request.form.get('selected_file')
@@ -86,11 +87,14 @@ def home():
             with open(FILE_DIRECTORY+'/'+FILE_PATH, 'rb') as f:
                 while True:
                     data = f.read(BUFFER_SIZE)
+                    
                     if not data:
                         break
+
                     global_ssock.send(data)
                 global_ssock.send(b'22222222')
                 print("[+] 文件接收完成")
+
         elif submit_action == 'video_submit':
             choice ='3'
             Send_Message(global_ssock, choice.encode())
@@ -123,7 +127,6 @@ def home():
                 cap.release()
                 client_socket.close()
                 cv2.destroyAllWindows()
-
 
     # 获取文件列表（保持原有逻辑）
     try:
