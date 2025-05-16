@@ -372,7 +372,7 @@ font: 700 10pt &quot;微软雅黑&quot;;
 </string>
                </property>
                <property name="text">
-                <string>消息传输</string>
+                <string>Msg Trans</string>
                </property>
               </widget>
              </item>
@@ -392,7 +392,7 @@ font: 700 10pt &quot;微软雅黑&quot;;
 font: 700 10pt &quot;微软雅黑&quot;;</string>
                </property>
                <property name="text">
-                <string>文件传输</string>
+                <string>File Trans</string>
                </property>
               </widget>
              </item>
@@ -412,7 +412,7 @@ font: 700 10pt &quot;微软雅黑&quot;;</string>
 font: 700 10pt &quot;微软雅黑&quot;;</string>
                </property>
                <property name="text">
-                <string>视频流</string>
+                <string>Real-time Video</string>
                </property>
               </widget>
              </item>
@@ -481,7 +481,7 @@ font: 700 10pt &quot;微软雅黑&quot;;
 </string>
                </property>
                <property name="text">
-                <string>连接设置</string>
+                <string>Connection</string>
                </property>
               </widget>
              </item>
@@ -646,7 +646,7 @@ font: 700 10pt &quot;微软雅黑&quot;;
                    <string notr="true">font:  11pt &quot;微软雅黑&quot;;</string>
                   </property>
                   <property name="text">
-                   <string>一款用于与IoT设备交互的APP</string>
+                   <string>An APP for interacting with IoT devices</string>
                   </property>
                  </widget>
                 </item>
@@ -954,11 +954,11 @@ font: 700 10pt &quot;微软雅黑&quot;;
                                    </sizepolicy>
                                   </property>
                                   <property name="styleSheet">
-                                   <string notr="true">font: 700 30pt &quot;微软雅黑&quot;;
+                                   <string notr="true">font: 700 18pt &quot;微软雅黑&quot;;
 color: rgb(255, 255, 255);</string>
                                   </property>
                                   <property name="text">
-                                   <string>加密通信验证</string>
+                                   <string>Secure Communication</string>
                                   </property>
                                  </widget>
                                 </item>
@@ -969,7 +969,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
                                   </property>
                                   <property name="text">
-                                   <string>Secure Communication Validation</string>
+                                   <string/>
                                   </property>
                                  </widget>
                                 </item>
@@ -1049,7 +1049,7 @@ border-bottom-color: rgb(189, 147, 249);
 border-style:solid;</string>
                                </property>
                                <property name="text">
-                                <string>TLS加密协议助力可靠通信传输</string>
+                                <string>TLS Encryption Support</string>
                                </property>
                               </widget>
                              </item>
@@ -1060,7 +1060,7 @@ border-style:solid;</string>
 font: 700 11pt &quot;Microsoft YaHei UI&quot;;</string>
                                </property>
                                <property name="text">
-                                <string>双向设备验证  轻量化部署</string>
+                                <string>Two-way device verification &amp; Lightweight deployment</string>
                                </property>
                               </widget>
                              </item>
@@ -1104,7 +1104,7 @@ font: 700 11pt &quot;Microsoft YaHei UI&quot;;</string>
 color: rgb(230, 230, 230);</string>
                                   </property>
                                   <property name="text">
-                                   <string>选取以下之一开始</string>
+                                   <string>Choose one to start</string>
                                   </property>
                                   <property name="alignment">
                                    <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -1141,7 +1141,7 @@ background-color: rgb(106, 159, 159);
 border-radius: 10px;</string>
                                   </property>
                                   <property name="text">
-                                   <string>  消息传输</string>
+                                   <string>Message Transmission</string>
                                   </property>
                                   <property name="icon">
                                    <iconset resource="resource.qrc">
@@ -1164,7 +1164,7 @@ background-color: rgb(106, 159, 159);
 border-radius: 10px;</string>
                                   </property>
                                   <property name="text">
-                                   <string>  文件传输</string>
+                                   <string>File Transmission</string>
                                   </property>
                                   <property name="icon">
                                    <iconset resource="resource.qrc">
@@ -1187,7 +1187,7 @@ background-color: rgb(106, 159, 159);
 border-radius: 10px;</string>
                                   </property>
                                   <property name="text">
-                                   <string>  视频传输</string>
+                                   <string>Real-time Video</string>
                                   </property>
                                   <property name="icon">
                                    <iconset resource="resource.qrc">
@@ -1260,7 +1260,7 @@ border-radius: 10px;</string>
 </string>
                             </property>
                             <property name="text">
-                             <string>消 息 接 收</string>
+                             <string>Message Transmission</string>
                             </property>
                            </widget>
                           </item>
@@ -1361,6 +1361,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                             <property name="styleSheet">
                              <string notr="true">color: rgb(217, 217, 217);</string>
                             </property>
+                            <property name="text">
+                             <string>Save Path</string>
+                            </property>
                             <property name="readOnly">
                              <bool>true</bool>
                             </property>
@@ -1379,6 +1382,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                             </property>
                             <property name="styleSheet">
                              <string notr="true">color: rgb(217, 217, 217);</string>
+                            </property>
+                            <property name="text">
+                             <string>File Name</string>
                             </property>
                             <property name="readOnly">
                              <bool>false</bool>
@@ -1401,7 +1407,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 color: rgb(255, 255, 255);</string>
                             </property>
                             <property name="text">
-                             <string>打  开</string>
+                             <string>Open</string>
                             </property>
                             <property name="icon">
                              <iconset resource="resource.qrc">
@@ -1422,7 +1428,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
                             </property>
                             <property name="text">
-                             <string>清 空</string>
+                             <string>Clear</string>
                             </property>
                             <property name="icon">
                              <iconset resource="resource.qrc">
@@ -1476,7 +1482,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
                             </property>
                             <property name="text">
-                             <string>保  存</string>
+                             <string>Save</string>
                             </property>
                             <property name="icon">
                              <iconset resource="resource.qrc">
@@ -1541,7 +1547,7 @@ color: rgb(255, 255, 255);</string>
 </string>
                             </property>
                             <property name="text">
-                             <string>文 件 接 收</string>
+                             <string>File Transmission</string>
                             </property>
                            </widget>
                           </item>
@@ -1642,6 +1648,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                             <property name="styleSheet">
                              <string notr="true">color: rgb(217, 217, 217);</string>
                             </property>
+                            <property name="text">
+                             <string>Save Path</string>
+                            </property>
                             <property name="readOnly">
                              <bool>true</bool>
                             </property>
@@ -1663,7 +1672,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 color: rgb(255, 255, 255);</string>
                             </property>
                             <property name="text">
-                             <string>打  开</string>
+                             <string>Open</string>
                             </property>
                             <property name="icon">
                              <iconset resource="resource.qrc">
@@ -1684,7 +1693,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
                             </property>
                             <property name="text">
-                             <string>清 空</string>
+                             <string>Clear</string>
                             </property>
                             <property name="icon">
                              <iconset resource="resource.qrc">
@@ -1777,7 +1786,7 @@ QProgressBar::chunk{
                           <item>
                            <widget class="QLabel" name="label_2">
                             <property name="text">
-                             <string>实 时 视 频</string>
+                             <string>Real-time Video</string>
                             </property>
                            </widget>
                           </item>
@@ -1927,7 +1936,7 @@ QProgressBar::chunk{
                           <item>
                            <widget class="QLabel" name="label_21">
                             <property name="text">
-                             <string>设 备 连 接</string>
+                             <string>Device Connection</string>
                             </property>
                            </widget>
                           </item>
@@ -2040,18 +2049,21 @@ QLineEdit:focus {
                                  <widget class="QLabel" name="label_27">
                                   <property name="minimumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>0</height>
                                    </size>
                                   </property>
                                   <property name="maximumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>16777215</height>
                                    </size>
                                   </property>
                                   <property name="text">
-                                   <string>IP地址：</string>
+                                   <string>IP Address：</string>
+                                  </property>
+                                  <property name="alignment">
+                                   <set>Qt::AlignmentFlag::AlignCenter</set>
                                   </property>
                                  </widget>
                                 </item>
@@ -2102,18 +2114,21 @@ QLineEdit:focus {
                                  <widget class="QLabel" name="label_28">
                                   <property name="minimumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>0</height>
                                    </size>
                                   </property>
                                   <property name="maximumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>16777215</height>
                                    </size>
                                   </property>
                                   <property name="text">
-                                   <string>端口号：</string>
+                                   <string>Port:</string>
+                                  </property>
+                                  <property name="alignment">
+                                   <set>Qt::AlignmentFlag::AlignCenter</set>
                                   </property>
                                  </widget>
                                 </item>
@@ -2164,18 +2179,21 @@ QLineEdit:focus {
                                  <widget class="QLabel" name="label_30">
                                   <property name="minimumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>0</height>
                                    </size>
                                   </property>
                                   <property name="maximumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>16777215</height>
                                    </size>
                                   </property>
                                   <property name="text">
-                                   <string>协议类型：</string>
+                                   <string>Protocol:</string>
+                                  </property>
+                                  <property name="alignment">
+                                   <set>Qt::AlignmentFlag::AlignCenter</set>
                                   </property>
                                  </widget>
                                 </item>
@@ -2229,18 +2247,21 @@ QLineEdit:focus {
                                  <widget class="QLabel" name="label_31">
                                   <property name="minimumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>0</height>
                                    </size>
                                   </property>
                                   <property name="maximumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>16777215</height>
                                    </size>
                                   </property>
                                   <property name="text">
-                                   <string>连接时间：</string>
+                                   <string>Time:</string>
+                                  </property>
+                                  <property name="alignment">
+                                   <set>Qt::AlignmentFlag::AlignCenter</set>
                                   </property>
                                  </widget>
                                 </item>
@@ -2291,18 +2312,21 @@ QLineEdit:focus {
                                  <widget class="QLabel" name="label_32">
                                   <property name="minimumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>0</height>
                                    </size>
                                   </property>
                                   <property name="maximumSize">
                                    <size>
-                                    <width>70</width>
+                                    <width>90</width>
                                     <height>16777215</height>
                                    </size>
                                   </property>
                                   <property name="text">
-                                   <string>连接状态：</string>
+                                   <string>Status:</string>
+                                  </property>
+                                  <property name="alignment">
+                                   <set>Qt::AlignmentFlag::AlignCenter</set>
                                   </property>
                                  </widget>
                                 </item>

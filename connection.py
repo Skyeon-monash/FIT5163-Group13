@@ -4,13 +4,7 @@ import ssl
 import threading
 import time
 from dataclasses import dataclass
-
-
-
 from PySide6.QtCore import Signal, QThread
-
-
-
 import struct
 import numpy as np
 import cv2
@@ -20,6 +14,7 @@ from PySide6.QtGui import QImage
 HOST = '0.0.0.0'
 PORT = 12345
 BUFFER_SIZE = 4096
+
 
 class ServerThread(QThread):
     connection_prompt_signal = Signal(str)
@@ -42,7 +37,7 @@ class ServerThread(QThread):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
             sock.bind((HOST, PORT))
             sock.listen(5)
-            self.connection_prompt_signal.emit("服务器已启动，等待连接...")
+            self.connection_prompt_signal.emit("Server is running，waiting for connection...")
 
             with context.wrap_socket(sock, server_side=True) as ssock:
                 ssock.settimeout(1.0)  # 便于检查 self.running
@@ -53,7 +48,7 @@ class ServerThread(QThread):
                         connect_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
                         info = [ip, str(port), connect_time]
                         self.connection_info_signal.emit(info)
-                        self.connection_prompt_signal.emit(f"已连接：{addr}")
+                        self.connection_prompt_signal.emit(f"Connected：{addr}")
 
                         client_thread = threading.Thread(
                             target=self.handle_client, args=(conn, addr), daemon=True
@@ -62,11 +57,11 @@ class ServerThread(QThread):
                     except socket.timeout:
                         continue
                     except Exception as e:
-                        self.connection_prompt_signal.emit(f"连接处理异常: {str(e)}")
+                        self.connection_prompt_signal.emit(f"Connection Process error: {str(e)}")
 
     def stop(self):
         self.running = False
-        self.connection_prompt_signal.emit("服务器即将关闭...")
+        self.connection_prompt_signal.emit("Server is stopping...")
 
     def handle_client(self, conn, addr):
         while True:
@@ -75,8 +70,8 @@ class ServerThread(QThread):
                     choice = conn.recv(BUFFER_SIZE).decode()
                     if not choice:
                         break  # 客户端关闭连接或断电
-#正确的
-                    self.connection_prompt_signal.emit(f"收到客户端 {addr} 的选择: {choice}")
+                    # 正确的
+                    self.connection_prompt_signal.emit(f"Receive client {addr}'s choice: {choice}")
 
                     if choice == "1":
                         self.receive_message(conn)
@@ -85,10 +80,10 @@ class ServerThread(QThread):
                     elif choice == "3":
                         self.receive_video(conn)
                     elif choice == "4":
-                        self.connection_prompt_signal.emit(f"客户端 {addr} 请求断开连接")
+                        self.connection_prompt_signal.emit(f"Client {addr} requests for disconnection")
                         break  # 跳出循环关闭连接
             except Exception as e:
-                self.connection_prompt_signal.emit(f"客户端 {addr} 处理错误: {str(e)}")
+                self.connection_prompt_signal.emit(f"Client {addr} process error: {str(e)}")
             # finally:
             #     self.disconnect(conn)
 
@@ -99,7 +94,7 @@ class ServerThread(QThread):
             pass
         finally:
             conn.close()
-            print("连接已断开")
+            print("Connection closed.")
 
     def receive_message(self, conn):
         msg = conn.recv(BUFFER_SIZE).decode()
@@ -111,7 +106,7 @@ class ServerThread(QThread):
 
     def receive_file(self, conn):
         current_hms = time.strftime("%H:%M:%S", time.localtime())
-        self.file_recv_signal.emit(f"[{current_hms}]: 客户端开始传输文件...")
+        self.file_recv_signal.emit(f"[{current_hms}]: Client starts to receive file...")
         if self.file_save_path:
             file_name = conn.recv(BUFFER_SIZE).decode()
             file_path = os.path.join(self.file_save_path, file_name)
@@ -122,7 +117,7 @@ class ServerThread(QThread):
                         break
                     f.write(data)
             current_hms = time.strftime("%H:%M:%S", time.localtime())
-            self.file_recv_signal.emit(f"[{current_hms}]: 文件 {file_name} 接收完成")
+            self.file_recv_signal.emit(f"[{current_hms}]: File {file_name} received.")
 
     def receive_video(self, conn):
         try:
@@ -130,7 +125,7 @@ class ServerThread(QThread):
                 raw_len = self.recv_all(conn, 4)
                 if not raw_len:
                     break
-                
+
                 msg_len = struct.unpack('!I', raw_len)[0]
 
                 frame_data = self.recv_all(conn, msg_len)
@@ -150,7 +145,7 @@ class ServerThread(QThread):
                     if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
         except Exception as e:
-            self.connection_prompt_signal.emit(f"视频接收错误: {str(e)}")
+            self.connection_prompt_signal.emit(f"Video receive error: {str(e)}")
         finally:
             cv2.destroyAllWindows()
 

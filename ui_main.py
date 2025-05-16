@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainKgaMke.ui'
+## Form generated from reading UI file 'mainYOXKOS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.0
 ##
@@ -189,6 +189,8 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_6.addWidget(self.titleLeftDescription)
+
+
         self.verticalLayout_5.addWidget(self.leftMenuTop)
 
         self.topMenu = QFrame(self.leftMenuBg)
@@ -263,7 +265,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.settingBtn)
 
+
         self.verticalLayout_5.addWidget(self.bottomMenu)
+
 
         self.horizontalLayout.addWidget(self.leftMenuBg)
 
@@ -338,6 +342,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.subtitleRightInfo)
 
+
         self.horizontalLayout_2.addWidget(self.leftBox)
 
         self.rightButtons = QFrame(self.contentTopBg)
@@ -386,7 +391,9 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.closeAppBtn)
 
+
         self.horizontalLayout_2.addWidget(self.rightButtons, 0, Qt.AlignmentFlag.AlignRight)
+
 
         self.verticalLayout_2.addWidget(self.contentTopBg, 0, Qt.AlignmentFlag.AlignTop)
 
@@ -475,7 +482,7 @@ class Ui_MainWindow(object):
         self.label_16.setObjectName(u"label_16")
         sizePolicy5.setHeightForWidth(self.label_16.sizePolicy().hasHeightForWidth())
         self.label_16.setSizePolicy(sizePolicy5)
-        self.label_16.setStyleSheet(u"font: 700 30pt \"\u5fae\u8f6f\u96c5\u9ed1\";\n"
+        self.label_16.setStyleSheet(u"font: 700 18pt \"\u5fae\u8f6f\u96c5\u9ed1\";\n"
 "color: rgb(255, 255, 255);")
 
         self.verticalLayout_30.addWidget(self.label_16)
@@ -487,9 +494,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_30.addWidget(self.label_17)
 
+
         self.verticalLayout_29.addWidget(self.frame_25, 0, Qt.AlignmentFlag.AlignTop)
 
+
         self.verticalLayout_28.addWidget(self.frame_24)
+
 
         self.horizontalLayout_14.addWidget(self.frame_20)
 
@@ -531,6 +541,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_32.addWidget(self.label_19)
 
+
         self.verticalLayout_31.addWidget(self.frame_26, 0, Qt.AlignmentFlag.AlignTop)
 
         self.frame_27 = QFrame(self.frame_21)
@@ -555,6 +566,7 @@ class Ui_MainWindow(object):
         self.label_20.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_34.addWidget(self.label_20)
+
 
         self.verticalLayout_33.addWidget(self.frame_28)
 
@@ -604,9 +616,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_35.addWidget(self.pushButton_8)
 
+
         self.verticalLayout_33.addWidget(self.frame_29)
 
+
         self.verticalLayout_31.addWidget(self.frame_27)
+
 
         self.horizontalLayout_14.addWidget(self.frame_21)
 
@@ -1088,8 +1103,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_20.setContentsMargins(-1, 0, -1, 0)
         self.label_27 = QLabel(self.frame_47)
         self.label_27.setObjectName(u"label_27")
-        self.label_27.setMinimumSize(QSize(70, 0))
-        self.label_27.setMaximumSize(QSize(70, 16777215))
+        self.label_27.setMinimumSize(QSize(90, 0))
+        self.label_27.setMaximumSize(QSize(90, 16777215))
+        self.label_27.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.horizontalLayout_20.addWidget(self.label_27)
 
@@ -1114,8 +1130,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_27.setContentsMargins(-1, 0, -1, 0)
         self.label_28 = QLabel(self.frame_48)
         self.label_28.setObjectName(u"label_28")
-        self.label_28.setMinimumSize(QSize(70, 0))
-        self.label_28.setMaximumSize(QSize(70, 16777215))
+        self.label_28.setMinimumSize(QSize(90, 0))
+        self.label_28.setMaximumSize(QSize(90, 16777215))
+        self.label_28.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.horizontalLayout_27.addWidget(self.label_28)
 
@@ -1140,8 +1157,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_29.setContentsMargins(-1, 0, -1, 0)
         self.label_30 = QLabel(self.frame_49)
         self.label_30.setObjectName(u"label_30")
-        self.label_30.setMinimumSize(QSize(70, 0))
-        self.label_30.setMaximumSize(QSize(70, 16777215))
+        self.label_30.setMinimumSize(QSize(90, 0))
+        self.label_30.setMaximumSize(QSize(90, 16777215))
+        self.label_30.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.horizontalLayout_29.addWidget(self.label_30)
 
@@ -1166,8 +1184,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_30.setContentsMargins(-1, 0, -1, 0)
         self.label_31 = QLabel(self.frame_50)
         self.label_31.setObjectName(u"label_31")
-        self.label_31.setMinimumSize(QSize(70, 0))
-        self.label_31.setMaximumSize(QSize(70, 16777215))
+        self.label_31.setMinimumSize(QSize(90, 0))
+        self.label_31.setMaximumSize(QSize(90, 16777215))
+        self.label_31.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.horizontalLayout_30.addWidget(self.label_31)
 
@@ -1192,8 +1211,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_31.setContentsMargins(-1, 0, -1, 0)
         self.label_32 = QLabel(self.frame_51)
         self.label_32.setObjectName(u"label_32")
-        self.label_32.setMinimumSize(QSize(70, 0))
-        self.label_32.setMaximumSize(QSize(70, 16777215))
+        self.label_32.setMinimumSize(QSize(90, 0))
+        self.label_32.setMaximumSize(QSize(90, 16777215))
+        self.label_32.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.horizontalLayout_31.addWidget(self.label_32)
 
@@ -1425,24 +1445,24 @@ class Ui_MainWindow(object):
         self.schoolSignBtn.setText("")
         self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"Course Design", None))
         self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Group13", None))
-        self.msgBtn.setText(QCoreApplication.translate("MainWindow", u"\u6d88\u606f\u4f20\u8f93", None))
-        self.fileBtn.setText(QCoreApplication.translate("MainWindow", u"\u6587\u4ef6\u4f20\u8f93", None))
-        self.videoBtn.setText(QCoreApplication.translate("MainWindow", u"\u89c6\u9891\u6d41", None))
-        self.settingBtn.setText(QCoreApplication.translate("MainWindow", u"\u8fde\u63a5\u8bbe\u7f6e", None))
+        self.msgBtn.setText(QCoreApplication.translate("MainWindow", u"Msg Trans", None))
+        self.fileBtn.setText(QCoreApplication.translate("MainWindow", u"File Trans", None))
+        self.videoBtn.setText(QCoreApplication.translate("MainWindow", u"Real-time Video", None))
+        self.settingBtn.setText(QCoreApplication.translate("MainWindow", u"Connection", None))
         self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"IoT Communication Server", None))
-        self.subtitleRightInfo.setText(QCoreApplication.translate("MainWindow", u"\u4e00\u6b3e\u7528\u4e8e\u4e0eIoT\u8bbe\u5907\u4ea4\u4e92\u7684APP", None))
+        self.subtitleRightInfo.setText(QCoreApplication.translate("MainWindow", u"An APP for interacting with IoT devices", None))
         self.minimizeAppBtn.setText("")
         self.maximizeRestoreAppBtn.setText("")
         self.closeAppBtn.setText("")
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"\u52a0\u5bc6\u901a\u4fe1\u9a8c\u8bc1", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Secure Communication Validation", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"TLS\u52a0\u5bc6\u534f\u8bae\u52a9\u529b\u53ef\u9760\u901a\u4fe1\u4f20\u8f93", None))
-        self.label_19.setText(QCoreApplication.translate("MainWindow", u"\u53cc\u5411\u8bbe\u5907\u9a8c\u8bc1  \u8f7b\u91cf\u5316\u90e8\u7f72", None))
-        self.label_20.setText(QCoreApplication.translate("MainWindow", u"\u9009\u53d6\u4ee5\u4e0b\u4e4b\u4e00\u5f00\u59cb", None))
-        self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"  \u6d88\u606f\u4f20\u8f93", None))
-        self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"  \u6587\u4ef6\u4f20\u8f93", None))
-        self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"  \u89c6\u9891\u4f20\u8f93", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"\u6d88 \u606f \u63a5 \u6536", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Secure Communication", None))
+        self.label_17.setText("")
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"TLS Encryption Support", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Two-way device verification & Lightweight deployment", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Choose one to start", None))
+        self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"Message Transmission", None))
+        self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"File Transmission", None))
+        self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"Real-time Video", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Message Transmission", None))
         self.messageRecv.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1451,12 +1471,14 @@ class Ui_MainWindow(object):
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI','Microsoft YaHei UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.msgSavePath.setText(QCoreApplication.translate("MainWindow", u"Save Path", None))
         self.msgSavePath.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u6d88\u606f\u4fdd\u5b58\u8def\u5f84", None))
+        self.msgSaveName.setText(QCoreApplication.translate("MainWindow", u"File Name", None))
         self.msgSaveName.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u6587\u4ef6\u540d", None))
-        self.fileOpenBtn.setText(QCoreApplication.translate("MainWindow", u"\u6253  \u5f00", None))
-        self.clearBtn.setText(QCoreApplication.translate("MainWindow", u"\u6e05 \u7a7a", None))
-        self.msgSaveBtn.setText(QCoreApplication.translate("MainWindow", u"\u4fdd  \u5b58", None))
-        self.label1.setText(QCoreApplication.translate("MainWindow", u"\u6587 \u4ef6 \u63a5 \u6536", None))
+        self.fileOpenBtn.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+        self.clearBtn.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
+        self.msgSaveBtn.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.label1.setText(QCoreApplication.translate("MainWindow", u"File Transmission", None))
         self.fileRecvPrompt.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1465,18 +1487,19 @@ class Ui_MainWindow(object):
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI','Microsoft YaHei UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.fileSavePath.setText(QCoreApplication.translate("MainWindow", u"Save Path", None))
         self.fileSavePath.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u6587\u4ef6\u4fdd\u5b58\u8def\u5f84", None))
-        self.fileOpenBtn1.setText(QCoreApplication.translate("MainWindow", u"\u6253  \u5f00", None))
-        self.clearBtn1.setText(QCoreApplication.translate("MainWindow", u"\u6e05 \u7a7a", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u5b9e \u65f6 \u89c6 \u9891", None))
+        self.fileOpenBtn1.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+        self.clearBtn1.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Real-time Video", None))
         self.videoDisplay.setText("")
-        self.label_21.setText(QCoreApplication.translate("MainWindow", u"\u8bbe \u5907 \u8fde \u63a5", None))
-        self.label_27.setText(QCoreApplication.translate("MainWindow", u"IP\u5730\u5740\uff1a", None))
-        self.label_28.setText(QCoreApplication.translate("MainWindow", u"\u7aef\u53e3\u53f7\uff1a", None))
-        self.label_30.setText(QCoreApplication.translate("MainWindow", u"\u534f\u8bae\u7c7b\u578b\uff1a", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Device Connection", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"IP Address\uff1a", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"Port:", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Protocol:", None))
         self.protocol.setText("")
-        self.label_31.setText(QCoreApplication.translate("MainWindow", u"\u8fde\u63a5\u65f6\u95f4\uff1a", None))
-        self.label_32.setText(QCoreApplication.translate("MainWindow", u"\u8fde\u63a5\u72b6\u6001\uff1a", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Time:", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"Status:", None))
         self.connectionPrompt.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
